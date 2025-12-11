@@ -45,8 +45,8 @@ body::before {
 
 /* --- Contact Section (Top Right) --- */
 .contact-section {
-    align-self: flex-end;
-    text-align: right;
+    align-self: flex-start;
+    text-align: left;
     color: #6b4f3d; /* Dark brown color */
     margin-bottom: 40px;
 }
@@ -59,14 +59,14 @@ body::before {
 
 .email-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-start;
     gap: 10px;
 }
 
 .email-container i {
-    margin-top: 5px; /* Align icon with first email */
-    font-size: 0.9rem;
+    margin-top: 0; /* Align icon vertically with emails */
+    font-size: 0.95rem;
 }
 
 .emails {
@@ -99,7 +99,8 @@ body::before {
 }
 
 .logo {
-    max-width: 100px; /* Adjust based on your actual logo file size */
+    max-width: 220px; /* Increased logo size for better visibility */
+    width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
@@ -162,4 +163,5 @@ body::before {
     .tagline { font-size: 0.7rem; letter-spacing: 2px;}
     .maintenance-heading { font-size: 1.8rem; }
     .maintenance-subheading { font-size: 1.2rem; }
+    .logo { max-width: 140px; }
 }
